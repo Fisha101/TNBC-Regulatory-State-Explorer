@@ -89,9 +89,8 @@ def load_data():
         index_col=0
     )
 
-    regulon_activity = pd.read_csv(
-        "app_data/regulon_activity.csv",
-        index_col=0
+    regulon_activity = pd.read_parquet(
+    "app_data/regulon_activity.parquet"
     )
 
     regulon_summary = pd.read_csv(
